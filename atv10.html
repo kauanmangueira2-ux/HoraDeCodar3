@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 10</title>
+    <script>
+       // Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão entre os números 24 e 42 (incluindo os valores 24 e 42) e quantos deles estão fora deste intervalo. 
+       let dentro = 0;
+       let fora = 0;
+         for (let i = 1; i <= 10; i++) {
+          let valor = Number(prompt("Digite o " + i + "º valor:"));
+          if (valor >= 24 && valor <= 42) {
+                dentro++;
+          } else {
+                fora++;
+          }
+          console.log("os números que o usuário escolheu para comparar foram: " + valor);
+         }
+         
+         console.log("Valores dentro do intervalo [24, 42]: " + dentro);
+         console.log("Valores fora do intervalo [24, 42]: " + fora);
+         
+         
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 5</title>
+    <!--Faça um algoritmo que calcule e escreva a média aritmética dos dois números inteiros informados pelo usuário e todos os números inteiros entre eles. Considere que o primeiro sempre será menor que o segundo.-->
+    <script>
+        let a = Number(prompt("Digite o seu primeiro número /n(lembrando que ele deve ser menor que o próximo)"))
+        let b = Number(prompt("Digite o segundo valor"))
+        let soma = 0
+        let quantidade = 0
+
+        if (a < b) {
+            for (let i = a; i <= b;i++) {
+                soma = soma + i;
+                quantidade = quantidade + 1;
+            }
+            let media = soma / quantidade;
+            console.log ("A média dos números " + a + " e " + b + " é " + media)
+        } else {
+            alert("O Valor de A dever ser menor do que B");
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

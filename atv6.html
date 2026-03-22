@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 6</title>
+    <!--Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.-->
+    <script>
+        let aprovados = 0;
+        let resposta = "s"; 
+        let media; 
+        let nota1;
+        let nota2;
+        
+        while (resposta === "s") {
+            nota1 = Number(prompt("Digite a primeira nota do aluno:"));
+            nota2 = Number(prompt("Digite a segunda nota do aluno:"));
+            media = (nota1 + nota2) / 2;
+
+            if (media >= 9.5) {
+                aprovados++;
+                console.log("Aluno aprovado com média: " + media);
+            } else {
+                console.log("Aluno reprovado com média: " + media);
+            }
+
+            resposta = prompt("Calcular a média de outro aluno s/n?")
+            switch (resposta) {
+                case "s":
+                    resposta = "s";
+                    break;
+                case "n":
+                    resposta = "n";
+                    break;
+                default:
+                    alert("Resposta inválida. Encerrando o programa.");
+                    resposta = "n";
+            }
+        }
+        console.log("Quantidade de alunos aprovados: " + aprovados);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

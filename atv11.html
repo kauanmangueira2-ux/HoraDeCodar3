@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 11</title>
+    <script>    
+    //Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário. 
+    let n = Number(prompt("Digite um número acima de 0:"))  
+    
+    if(n >=0) {
+        for (let i = 1; i <= n; i++){
+            console.log("tabuada do " +i+ ":");
+       for (let j = 1; j <= 10; j++ ) {
+            console.log( i+ "X" +j+ "=" + (i*j))  
+        }
+        console.log(""); }
+        
+    } else {
+        alert("O número informado precisa ser maior do que 0")
+    }
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
